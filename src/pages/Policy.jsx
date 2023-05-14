@@ -1,7 +1,10 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import {useNavbarContext} from "../context/navbarContext";
 
 function Policy(props) {
+    const {setNavbar} = useNavbarContext()
+
     return (
         <div className='container'>
             <br/><br/><br/><br/>
