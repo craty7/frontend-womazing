@@ -1,0 +1,454 @@
+html {
+    scroll-behavior: smooth
+}
+
+br{
+    user-select: none;
+}
+
+.zakaz{
+    background-image: url("./svg/zvonok.svg");
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+    transition: .5s;
+}
+
+.zakaz:hover{
+    background-image: url("./svg/zvonok (hover).svg");
+}
+
+
+
+.texthover{
+    color: black;
+    text-underline-offset: 6px;
+    transition: all .5s ease-out!important;
+}
+
+.arrow{
+    background-image: url(./../assets/png/arrowright.png);
+}
+
+.texthover:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-color: #6E9C9F;
+    color: #6E9C9F;
+    text-underline-offset: 7px
+}
+
+.color-blue{
+    color: #6E9C9F
+}
+
+.list-none{
+    list-style-type: none;
+}
+
+.s{
+    background-color: white!important;
+}
+
+.center{
+    background-position-x: center!important;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.square-button{
+    cursor: pointer;
+    width: 68px;
+    height: 68px;
+    border: 0px;
+    background-color: rgba(110, 156, 159, 0.1);
+    background-image: url("./svg/vector.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 50%;
+    transition: 0.5s;
+}
+
+.square-button:hover{
+    background-color: rgba(110, 156, 159, 0.2);
+    background-position-y: 60%;
+}
+
+.knopka{
+    background: #6E9C9F;
+    cursor: pointer;
+    border: 0px;
+    width: 243px;
+    height: 68px;
+    padding: 22px 50px;
+    transition: 0.5s;
+}
+
+.knopka:hover{
+    background: #509498;
+}
+
+.knopka nav{
+    width: 143px;
+    height: 24px;
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 138.9%;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.knopka-2{
+    cursor: pointer;
+    border: 1px solid #6E9C9F;
+    background: white;
+    width: 243px;
+    height: 68px;
+    padding: 22px 50px;
+    transition: 0.5s;
+}
+
+.knopka-2:hover{
+    background: #6E9C9F;
+    border: 1px solid white;
+}
+
+.knopka-2 nav{
+    width: 143px;
+    height: 24px;
+    color: #6E9C9F;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 138.9%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    transition: 0.5s ;
+}
+
+.knopka-2:hover nav{
+    color: white
+}
+
+.black-knopka{
+    cursor: pointer;
+    border: 1px solid #000000;
+    background: white;
+    height: 62px;
+    padding: 19px 65px;
+    gap: 10px;
+}
+
+.black-knopka nav{
+    color: #000000;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    transition: 0.5s;
+}
+
+.black-knopka:hover nav{
+    color: #6E9C9F;
+}
+
+.black-knopka-after{
+    cursor: pointer;
+    border: 1px solid black;
+    background: black;
+    height: 62px;
+    padding: 19px 65px;
+    gap: 10px;
+    transition: 0.5s;
+}
+
+.black-knopka-after nav{
+    color: white;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    transition: 0.5s;
+}
+
+
+
+.black-knopka-size{
+    cursor: pointer;
+    width: 41px;
+    height: 41px;
+    border: 1px solid #000000;
+    background: white;
+}
+
+.black-knopka-size nav{
+    color: #000000;
+    position: relative;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+.black-knopka-size:hover nav{
+    color: #6E9C9F;
+}
+
+.black-knopka-size-after{
+    cursor: pointer;
+    width: 41px;
+    height: 41px;
+    border: 1px solid black;
+    background: black;
+    gap: 10px;
+    transition: 0.5s;
+}
+
+.black-knopka-size-after nav{
+
+    color: white;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+
+
+.choose-color{
+    cursor: pointer;
+    width: 41px;
+    height: 41px;
+    border: 1px solid #000000;
+    border-radius: 100px;
+
+}
+
+.choose-color-after{
+    cursor: pointer;
+    width: 41px;
+    height: 41px;
+    border: 0px solid #000000;
+    border-radius: 100px;
+}
+
+.brown{
+    background: linear-gradient(0deg, #927876, #927876), #927876
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: #fff;
+    z-index: 1001;
+}
+
+.preloader__image {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 128px;
+    height: 128px;
+    margin-top: -64px;
+    margin-left: -64px;
+    background: url('./preloader/Preloader_2.gif') no-repeat 50% 50%; /*расположение (url) изображения gif и др. параметры*/
+}
+
+.loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+}
+
+.loaded .preloader {
+    display: none;
+}
+
+
+/** {box-sizing: border-box}*/
+
+.contain {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.overlay {
+    position: absolute;
+    cursor: pointer;
+    bottom: 0;
+    background-color: rgba(110, 156, 159, 0.77);
+    background-image: url("./svg/vector2.svg");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: center;
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    opacity:0;
+    font-size: 20px;
+    text-align: center;
+    transition: .5s ease-out
+}
+
+.contain:hover .overlay {
+    opacity: 1;
+    background-position-x: 52%
+}
+
+
+.quantity-button{
+    cursor: pointer;
+    background: white;
+    width: 68px;
+    height: 68px;
+    border: 1px solid #AFAFAF;
+}
+
+.delete-button{
+    background-color: white;
+    width: 22px;
+    height: 22px;
+    border-radius: 8px;
+    transition: 0.3s;
+
+}
+
+.delete-button:hover{
+    background-color: lightgray;
+
+}
+
+.basket-count{
+    border: none;
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    background: #998E78;
+    border-radius: 50px
+}
+
+.shop-input{
+
+    outline: none;
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 330px;
+    font-size: 17px;
+
+}
+
+.shop-input::placeholder{
+    color: #868686;
+    font-weight: 400;
+    font-size: 17px;
+    transition: 0.6s ease;
+}
+
+.shop-input:focus::placeholder {
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+
+.t-area::placeholder{
+    color: #868686;
+    font-weight: 400;
+    font-size: 17px;
+    transition: 0.6s ease;
+}
+
+.t-area:focus::placeholder {
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+
+
+
+
+.checkbox-wrapper {
+    width: 22px;
+    height: 21px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: white;
+}
+
+.checkbox-wrapper input {
+    display: none;
+
+}
+
+.checkbox-wrapper label {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: transparent;
+    cursor: pointer;
+    visibilty: hidden;
+    position: absolute;
+    z-index: 10;
+}
+
+.checkbox-wrapper span {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+}
+
+.checkbox-wrapper #modern-checkbox:checked+span {
+    background: black;
+}
+
+.splide__arrow--prev{
+    background: url("./svg/leftarrow.svg") no-repeat!important;
+    transition: 0.3s ease-out;
+}
+
+.splide__arrow--prev:hover{
+    opacity: 1!important;
+}
+
+
+.splide__arrow--next{
+    background: url('./svg/rightarrow.svg') no-repeat!important;
+    width: 31px!important;
+    opacity: 0.35!important;
+    transition: 0.3s ease-out;
+}
+
+.splide__arrow--next:hover{
+    opacity: 0.55!important;
+}
+
+.splide__pagination--page-r{
+    background: url('./svg/rightarrow.svg') no-repeat!important;
+}
+
+.bord {
+    border: none;
+}
