@@ -1,9 +1,8 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import {useNavbarContext} from "../context/navbarContext";
-import { Splide, SplideSlide } from '@splidejs/react-splide';
 
-function About(props) {
+function About() {
     const {setNavbar} = useNavbarContext()
 
 
@@ -22,7 +21,7 @@ function About(props) {
             <nav className="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
                 <ul>
                     <li><Link onClick={_ => setNavbar(prev => ({...prev, main: true, shop: false, about: false, contacts: false}))} to='/' className='texthover has-text-black has-text-weight-normal title is-5'>Главная</Link></li>
-                    <li className="is-active "><a aria-current="page"><nav className='has-text-weight-normal subtitle is-5' style={{color: '#919191'}} >О бренде</nav></a></li>
+                    <li className="is-active "><a><nav className='has-text-weight-normal subtitle is-5' style={{color: '#919191'}} >О бренде</nav></a></li>
                 </ul>
             </nav>
             <br/><br/><br/><br/><br/><br/><br/><br/>
