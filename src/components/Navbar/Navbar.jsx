@@ -5,6 +5,8 @@ import axios from "axios";
 import {UserContext} from "../../App";
 import {toast} from "react-toastify";
 import {NavbarContext, useNavbarContext} from "../../context/navbarContext";
+import logo from '../../assets/svg/logo.svg'
+import cart from '../../assets/svg/shopping-bags 1.svg'
 
 
 function Navbar(props) {
@@ -68,7 +70,7 @@ function Navbar(props) {
                 <div style={{marginLeft: '5%'}} className="navbar-brand ">
                     <Link onClick={_ => setNavbar(prev => ({...prev, main: true, shop: false, about: false, contacts: false}))} to='/'>
                         <div className="navbar-item ">
-                            <img src="http://womazing.s-host.net/wp-content/uploads/2021/02/logo.svg"/>
+                            <img src={logo}/>
                         </div>
                     </Link>
 
@@ -178,7 +180,7 @@ function Navbar(props) {
                             </div>
                             <Link onClick={_ => setNavbar(prev => ({...prev, main: false, shop: false, about: false, contacts: false}))} to='/cart'>
                                 <div className="navbar-item ml-5">
-                                    <img src="http://womazing.s-host.net/wp-content/uploads/2021/02/cart.svg" alt=""/>
+                                    <img src={cart}/>
                                     {bcount !== 0 && ref && user.jwt &&
                                         <button className='basket-count mb-5'>
                                             <nav className='has-text-white has-text-weight-light'>

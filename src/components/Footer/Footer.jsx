@@ -2,6 +2,11 @@ import React from 'react';
 import telep from "../../assets/svg/tel.svg";
 import {Link, NavLink} from "react-router-dom";
 import {useNavbarContext} from "../../context/navbarContext";
+import logo from '../../assets/svg/logo.svg'
+import instagram from '../../assets/svg/social icons/instagram.svg'
+import facebook from '../../assets/svg/social icons/facebook.svg'
+import twitter from '../../assets/svg/social icons/twitter.svg'
+import cards from '../../assets/svg/social icons/visa-mastercard.svg'
 
 function Footer(props) {
     const {setNavbar} = useNavbarContext()
@@ -14,7 +19,7 @@ function Footer(props) {
                     <nav style={{backgroundColor: '#F1EADC', height: '130px'}} className="navbar" role="navigation" aria-label="main navigation">
                         <div className="navbar-brand">
                             <NavLink onClick={_ => setNavbar(prev => ({...prev, main: true, shop: false, about: false, contacts: false}))} to='/' className="navbar-item" >
-                                <img src="http://womazing.s-host.net/wp-content/uploads/2021/02/logo.svg" width="139" height="25"/>
+                                <img src={logo} width="139" height="25"/>
                             </NavLink>
                         </div>
 
@@ -70,18 +75,18 @@ function Footer(props) {
                                     <br/>
                                     <ul className='has-text-right'>
                                         <a href='https://www.instagram.com'>
-                                            <img className='mr-3' src="http://womazing.s-host.net/wp-content/uploads/2021/02/instagram.svg" alt=""/>
+                                            <img className='mr-3' src={instagram}/>
                                         </a>
                                         <a href='https://facebook.com'>
-                                            <img className='mr-3' src="http://womazing.s-host.net/wp-content/uploads/2021/02/facebook.svg" alt=""/>
+                                            <img className='mr-3' src={facebook}/>
                                         </a>
                                         <a href='https://twiter.com'>
-                                            <img className='mr-0' src="http://womazing.s-host.net/wp-content/uploads/2021/02/twitter.svg" alt=""/>
+                                            <img className='mr-0' src={instagram}/>
                                         </a>
                                     </ul>
                                     <br/>
                                     <ul className='has-text-right'>
-                                        <img className='mr-0' src="http://womazing.s-host.net/wp-content/uploads/2021/02/visa-mastercard.svg" alt=""/>
+                                        <img className='mr-0' src={cards}/>
                                     </ul>
                                 </li>
 

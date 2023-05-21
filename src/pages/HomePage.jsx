@@ -6,6 +6,11 @@ import '../assets/script'
 import {useNavbarContext} from "../context/navbarContext";
 import Product from "./Product";
 import {Splide, SplideTrack, SplideSlide} from "@splidejs/react-splide";
+import main from '../assets/png/Фото главное.png'
+import slider1 from '../assets/png/slider1.jpg'
+import slider2 from '../assets/png/slider2.jpg'
+import slider3 from '../assets/png/slider3.jpg'
+
 
 function HomePage(props) {
     const [data, setData] = useState(null)
@@ -65,7 +70,7 @@ function HomePage(props) {
                     </div>
                 </div>
                 <div className="column is-6 has-text-right mr-3">
-                    <img src="http://womazing.s-host.net/wp-content/uploads/2021/04/main-photo.jpg" alt=""/>
+                    <img src={main} alt=""/>
                 </div>
             </div>
 
@@ -98,9 +103,6 @@ function HomePage(props) {
                     <div className="column is-0"></div>
                     <div className='column is-4'>
                         <li className='list-none'>
-                            <ul>
-                                <img src="http://womazing.s-host.net/wp-content/uploads/2021/03/icon1.svg" alt=""/>
-                            </ul>
                             <br/>
                             <ul>
                                 <p className='title is-3 has-text-weight-normal has-text-black'>Качество</p>
@@ -116,9 +118,6 @@ function HomePage(props) {
 
                     <div className='column'>
                         <li className='list-none'>
-                            <ul>
-                                <img src="http://womazing.s-host.net/wp-content/uploads/2021/03/icon2.svg" alt=""/>
-                            </ul>
                             <br/>
                             <ul>
                                 <p className='title is-3 has-text-weight-normal has-text-black'>Скорость</p>
@@ -134,9 +133,6 @@ function HomePage(props) {
 
                     <div className='column'>
                         <li className='list-none'>
-                            <ul>
-                                <img src="http://womazing.s-host.net/wp-content/uploads/2021/03/icon3.svg" alt=""/>
-                            </ul>
                             <br/>
                             <ul>
                                 <p className='title is-3 has-text-weight-normal has-text-black'>Ответственность</p>
@@ -181,13 +177,13 @@ function HomePage(props) {
                         }}>
                             <SplideTrack >
                                 <SplideSlide>
-                                    <img src="http://womazing.s-host.net/wp-content/uploads/2021/04/slider1.jpg" alt="Image 1"/>
+                                    <img src={slider1} alt="Image 1"/>
                                 </SplideSlide>
                                 <SplideSlide>
-                                    <img src="http://womazing.s-host.net/wp-content/uploads/2021/04/slider2.jpg" alt="Image 2"/>
+                                    <img src={slider2} alt="Image 2"/>
                                 </SplideSlide>
                                 <SplideSlide>
-                                    <img src="http://womazing.s-host.net/wp-content/uploads/2021/04/slider3.jpg" alt="Image 3"/>
+                                    <img src={slider3} alt="Image 3"/>
                                 </SplideSlide>
                             </SplideTrack>
 

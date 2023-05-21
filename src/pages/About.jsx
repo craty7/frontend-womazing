@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import {useNavbarContext} from "../context/navbarContext";
+import about1 from '../../src/assets/png/about-pictures1.jpg'
+import about2 from '../../src/assets/png/about-pictures2.jpg'
 
 function About() {
     const {setNavbar} = useNavbarContext()
@@ -28,7 +30,7 @@ function About() {
 
             <div className="columns">
                 <div className="column is-">
-                    <img src="http://womazing.s-host.net/wp-content/uploads/2021/03/about-pictures1.jpg" alt=""/>
+                    <img src={about1}/>
                 </div>
                 <div className="column">
                     <br/><br/><br/><br/>
@@ -60,7 +62,7 @@ function About() {
                     </div>
                 </div>
                 <div className="column has-text-right">
-                    <img src="http://womazing.s-host.net/wp-content/uploads/2021/03/about-pictures2.jpg" alt=""/>
+                    <img src={about2}/>
                 </div>
 
             </div>
