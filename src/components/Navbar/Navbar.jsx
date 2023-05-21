@@ -43,20 +43,20 @@ function Navbar(props) {
         let searchParams = new URLSearchParams(paramsString);
 
 
-    useEffect(_ => {
-        const user = JSON.parse(localStorage.getItem('user'))
-        axios.get(`${process.env.REACT_APP_API_URL}/users?populate=baskets.owner.product.Thumbnail&filters[id]=${user.id}`, {
-            headers: {
-                Authorization: `Bearer ${localStorage.getItem('jwt')}`,
-            }
-        })
-            .then(result => {
-                console.log(result.data[0].baskets.length, 'result')
-                // console.log('get data', result)
-                setData(result)
-                setBcount(result.data[0].baskets.length)
-            }).catch(err => console.log('error', err))
-    }, [isLoading])
+    // useEffect(_ => {
+    //     const user = JSON.parse(localStorage.getItem('user'))
+    //     axios.get(`${process.env.REACT_APP_API_URL}/users?populate=baskets.owner.product.Thumbnail&filters[id]=${user.id}`, {
+    //         headers: {
+    //             Authorization: `Bearer ${localStorage.getItem('jwt')}`,
+    //         }
+    //     })
+    //         .then(result => {
+    //             console.log(result.data[0].baskets.length, 'result')
+    //             // console.log('get data', result)
+    //             setData(result)
+    //             setBcount(result.data[0].baskets.length)
+    //         }).catch(err => console.log('error', err))
+    // }, [isLoading])
 
 
 
